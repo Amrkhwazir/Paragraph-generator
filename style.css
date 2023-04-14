@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(208, 234, 255);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(208, 234, 255);
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 45px;
+    padding: 6px;
+    margin-bottom: 30px;
+    /* border: 1px solid rebeccapurple; */
+}
+.para{
+margin-top: 4px;
+font-weight: 600;
+font-size: 18px;
+}
+#inputbar{
+    width: 180px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 4px;
+}
+.generateBtn{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: navy;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+.generateBtn:active{
+    transform: scale(0.9);
+}
+.box{
+    width: 600px;
+    border: 4px solid white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    color: navy;
+    transition: 1s all ease;
+}
+@media(min-width: 300px) and (max-width: 450px){
+    .input{
+        display: flex;
+        justify-content: space-between;
+        width: 310px;
+        height: 40px;
+        /* padding: 10px; */
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+    #inputbar{
+        width: 120px;
+        height: 30px;
+        border: 1px solid gray;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+    }
+    .generateBtn{
+        cursor: pointer;
+        width: 80px;
+        height: 30px;
+        background-color: navy;
+        border: none;
+        color: white;
+        border-radius: 3px;
+    }
+    .box{
+        width: 300px;
+        border: 4px solid white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 3px;
+        color: navy;
+        transition: 1s all ease;
+    }
+    .para{
+        margin-top: 7px;
+        font-weight: 600;
+        font-size: 13px;
+        }
+}
